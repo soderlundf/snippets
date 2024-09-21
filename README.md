@@ -29,7 +29,10 @@ const options = {
             description: 'API documentation for the Gallery Indexer',
         },
     },
-    apis: ['./indexer.js'], // Path to the API docs
+    apis: [
+        './indexer.js',
+        './routes/*.js',
+    ], // Path to the API docs
 };
 
 const specs = swaggerJsdoc(options);
